@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064ABBE47A124EDB334F8A54 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF9433A5B5CAC502A92A53A /* Pods.framework */; };
 		DAE762C71CF20D2F0087A98B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE762C61CF20D2F0087A98B /* AppDelegate.swift */; };
 		DAE762C91CF20D2F0087A98B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE762C81CF20D2F0087A98B /* MasterViewController.swift */; };
 		DAE762CB1CF20D2F0087A98B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE762CA1CF20D2F0087A98B /* DetailViewController.swift */; };
@@ -15,6 +16,10 @@
 		DAE762D31CF20D2F0087A98B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE762D11CF20D2F0087A98B /* LaunchScreen.storyboard */; };
 		DAE762DE1CF20D2F0087A98B /* NyTimesArticleSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE762DD1CF20D2F0087A98B /* NyTimesArticleSearchTests.swift */; };
 		DAE762E91CF20D2F0087A98B /* NyTimesArticleSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE762E81CF20D2F0087A98B /* NyTimesArticleSearchUITests.swift */; };
+		DAE762F81CF21B680087A98B /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE762F71CF21B680087A98B /* ArticleModel.swift */; };
+		DAE762FA1CF21C210087A98B /* ArticleListRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE762F91CF21C210087A98B /* ArticleListRequestModel.swift */; };
+		DAE762FC1CF21C360087A98B /* ArticleListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE762FB1CF21C360087A98B /* ArticleListResponseModel.swift */; };
+		DAE762FE1CF3563A0087A98B /* ArrayTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE762FD1CF3563A0087A98B /* ArrayTransform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E31764B36B5166DE1F4653C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3CF9433A5B5CAC502A92A53A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DE6DFD63A8F4A9E4A2D710 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DAE762C31CF20D2F0087A98B /* NyTimesArticleSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NyTimesArticleSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE762C61CF20D2F0087A98B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE762C81CF20D2F0087A98B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		DAE762E41CF20D2F0087A98B /* NyTimesArticleSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NyTimesArticleSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE762E81CF20D2F0087A98B /* NyTimesArticleSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyTimesArticleSearchUITests.swift; sourceTree = "<group>"; };
 		DAE762EA1CF20D2F0087A98B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAE762F71CF21B680087A98B /* ArticleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		DAE762F91CF21C210087A98B /* ArticleListRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListRequestModel.swift; sourceTree = "<group>"; };
+		DAE762FB1CF21C360087A98B /* ArticleListResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListResponseModel.swift; sourceTree = "<group>"; };
+		DAE762FD1CF3563A0087A98B /* ArrayTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTransform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064ABBE47A124EDB334F8A54 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C81CC25A58886644F71286A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51DE6DFD63A8F4A9E4A2D710 /* Pods.debug.xcconfig */,
+				1E31764B36B5166DE1F4653C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DAE762BA1CF20D2F0087A98B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				DAE762DC1CF20D2F0087A98B /* NyTimesArticleSearchTests */,
 				DAE762E71CF20D2F0087A98B /* NyTimesArticleSearchUITests */,
 				DAE762C41CF20D2F0087A98B /* Products */,
+				C81CC25A58886644F71286A8 /* Pods */,
+				DDCF939FA8C7A025B6B2605C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +123,7 @@
 		DAE762C51CF20D2F0087A98B /* NyTimesArticleSearch */ = {
 			isa = PBXGroup;
 			children = (
+				DAE762F61CF21AF90087A98B /* Models */,
 				DAE762C61CF20D2F0087A98B /* AppDelegate.swift */,
 				DAE762C81CF20D2F0087A98B /* MasterViewController.swift */,
 				DAE762CA1CF20D2F0087A98B /* DetailViewController.swift */,
@@ -106,6 +131,7 @@
 				DAE762CF1CF20D2F0087A98B /* Assets.xcassets */,
 				DAE762D11CF20D2F0087A98B /* LaunchScreen.storyboard */,
 				DAE762D41CF20D2F0087A98B /* Info.plist */,
+				DAE762FD1CF3563A0087A98B /* ArrayTransform.swift */,
 			);
 			path = NyTimesArticleSearch;
 			sourceTree = "<group>";
@@ -128,6 +154,24 @@
 			path = NyTimesArticleSearchUITests;
 			sourceTree = "<group>";
 		};
+		DAE762F61CF21AF90087A98B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAE762F71CF21B680087A98B /* ArticleModel.swift */,
+				DAE762F91CF21C210087A98B /* ArticleListRequestModel.swift */,
+				DAE762FB1CF21C360087A98B /* ArticleListResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDCF939FA8C7A025B6B2605C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CF9433A5B5CAC502A92A53A /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAE762ED1CF20D2F0087A98B /* Build configuration list for PBXNativeTarget "NyTimesArticleSearch" */;
 			buildPhases = (
+				27D8421590428FF4F9AD8838 /* Check Pods Manifest.lock */,
 				DAE762BF1CF20D2F0087A98B /* Sources */,
 				DAE762C01CF20D2F0087A98B /* Frameworks */,
 				DAE762C11CF20D2F0087A98B /* Resources */,
+				8ED854E339DAC314800657C7 /* Embed Pods Frameworks */,
+				24B1276C9379A87F61E36349 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +301,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24B1276C9379A87F61E36349 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27D8421590428FF4F9AD8838 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8ED854E339DAC314800657C7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DAE762BF1CF20D2F0087A98B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +356,10 @@
 			files = (
 				DAE762CB1CF20D2F0087A98B /* DetailViewController.swift in Sources */,
 				DAE762C91CF20D2F0087A98B /* MasterViewController.swift in Sources */,
+				DAE762FA1CF21C210087A98B /* ArticleListRequestModel.swift in Sources */,
+				DAE762FC1CF21C360087A98B /* ArticleListResponseModel.swift in Sources */,
+				DAE762F81CF21B680087A98B /* ArticleModel.swift in Sources */,
+				DAE762FE1CF3563A0087A98B /* ArrayTransform.swift in Sources */,
 				DAE762C71CF20D2F0087A98B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +502,7 @@
 		};
 		DAE762EE1CF20D2F0087A98B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DE6DFD63A8F4A9E4A2D710 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NyTimesArticleSearch/Info.plist;
@@ -414,6 +514,7 @@
 		};
 		DAE762EF1CF20D2F0087A98B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E31764B36B5166DE1F4653C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NyTimesArticleSearch/Info.plist;
@@ -488,6 +589,7 @@
 				DAE762EF1CF20D2F0087A98B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAE762F01CF20D2F0087A98B /* Build configuration list for PBXNativeTarget "NyTimesArticleSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +598,7 @@
 				DAE762F21CF20D2F0087A98B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAE762F31CF20D2F0087A98B /* Build configuration list for PBXNativeTarget "NyTimesArticleSearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +607,7 @@
 				DAE762F51CF20D2F0087A98B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
