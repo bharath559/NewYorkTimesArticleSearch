@@ -48,22 +48,9 @@ class MasterViewController: UITableViewController {
                         
                         case .Success:
                             
-                         //print(response.result.value)
-                         
                          let articlesJson = response.result.value
-                         
-                         //print(articles!["response"]!!["docs"])
-                         
                          let articleModels = Mapper<ArticleListResponseModel>().map(articlesJson)
-                         //print(articleModels)
-                         
                          self.artciles = articleModels!.articles
-                         
-                         for eachArticle in articleModels!.articles{
-                            
-                            print(eachArticle)
-                         }
-                         
                          self.tableView.reloadData()
                         
                         break
@@ -76,7 +63,6 @@ class MasterViewController: UITableViewController {
                             self.artciles = List(articles)
                             
                             self.tableView.reloadData()
-                            print(error)
                         
                         break
                     }

@@ -14,11 +14,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
-        print(self.url)
+        super.viewDidLoad()
         self.webView.loadRequest(NSURLRequest(URL: NSURL(string:self.url!)!))
-        // Do any additional setup after loading the view, typically from a nib.
         
     }
 
